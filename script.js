@@ -1,11 +1,12 @@
 function volume_sphere() {
     //Write your code here
 	let pi=3.14;
- let radius=document.getElementById("radius").value;
+
 	let volume=document.getElementById("volume");
 	let submit=document.getElementById("submit")
 	submit.addEventListener("click", (event)=>{
 		event.preventDefault();
+		 let radius=document.getElementById("radius").value;
  if(isNaN(radius) || (radius<0 ){
 	  document.getElementById("volume").textContent = NaN;
         return;
