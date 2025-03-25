@@ -12,4 +12,7 @@ let	volume= (4*pi*radius*radius*radius)/3
 document.getElementById("volume").textContent=volume.toFixed(4)
 } 
 
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload =function () {
+document.getElementById('MyForm').onsubmit = volume_sphere;
+	
+} 
