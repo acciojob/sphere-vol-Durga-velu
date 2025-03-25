@@ -7,8 +7,8 @@ function volume_sphere() {
 	submit.addEventListener("click", (event)=>{
 		event.preventDefault();
 		 let radius=document.getElementById("radius").value;
- if(isNaN(radius) || (radius<0 ){
-	  document.getElementById("volume").textContent = NaN;
+ if(isNaN(radius) || radius<0 ){
+	  volume.value = NaN;
         return;
  }
 	
@@ -20,5 +20,5 @@ volume.value=volumeOfSphere.toFixed(4)
 
 } 
 
-window.onload =document.getElementById('MyForm').onsubmit = volume_sphere;
-	
+window.onload =
+document.getElementById('MyForm').onsubmit = volume_sphere; 
