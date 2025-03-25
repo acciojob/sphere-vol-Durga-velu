@@ -1,6 +1,6 @@
 function volume_sphere() {
     //Write your code here
-	let pi=3.14;
+	
 
 	let volume=document.getElementById("volume");
 	let submit=document.getElementById("submit")
@@ -12,7 +12,7 @@ function volume_sphere() {
         return;
  }
 	
- let volumeOfSphere = (4 * pi * radius*radius*radius) / 3;
+ let volumeOfSphere = (4 * Math.PI * radius*radius*radius) / 3;
 
 volume.value=volumeOfSphere.toFixed(4)
 		
