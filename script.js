@@ -12,7 +12,7 @@ function volume_sphere() {
         return;
  }
 	
- let volumeOfSphere = (4 * pi * Math.pow(radius, 3)) / 3;
+ let volumeOfSphere = (4 * pi * radius*radius*radius) / 3;
 
 volume.value=volumeOfSphere.toFixed(4)
 		
